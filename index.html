@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Cuidados com Cachorros</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <header>
+        <div class="background-image"></div> <!-- Div separada para a imagem de fundo -->
+        <h1>Cuidados com Seu Melhor Amigo</h1>
+        <nav>
+            <ul>
+                <li><a href="#cuidados">Cuidados</a></li>
+                <li><a href="#alimentacao">Alimentação</a></li>
+                <li><a href="#saude">Saúde</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cuidados">
+            <h2>Cuidados Gerais</h2>
+            <article>
+                <div class="carousel">
+                    <div class="slides">
+                <img src="imagens/banho.jpeg" alt="">
+                <img src="imagens/tosaa.jpeg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h3>Banho e Tosa</h3>
+                    <p>Manter a higiene do seu cachorro é essencial não apenas para sua aparência, mas também para sua saúde. Banhos regulares ajudam a remover sujeira, pelos soltos e odores, enquanto a tosa é importante para raças que acumulam pelos e necessitam de cuidados especiais. A frequência ideal do banho pode variar conforme a raça e o estilo de vida do cão, mas, em geral, uma vez por mês é uma boa média. Utilize produtos específicos para cães, evitando produtos de uso humano, que podem irritar a pele deles.</p>
+                </div>
+            </article>
+            <article>
+                <div class="carousel">
+                    <div class="slides">
+                <img src="imagens/exercicio.jpeg" alt="">
+                <img src="imagens/exercicio3.jpeg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h3>Exercícios Diários</h3>
+                    <p>Os cães precisam de exercícios regulares para manter a saúde física e mental. Caminhadas diárias, brincadeiras e atividades como correr ou nadar são essenciais. Além de prevenir a obesidade, o exercício regular ajuda a evitar comportamentos destrutivos e problemas de ansiedade. A quantidade de exercício necessária pode variar com base na idade, raça e nível de energia do cão, então adapte as atividades ao seu amigo peludo.</p>
+                </div>
+            </article>
+        </div>
+
+        <div id="alimentacao">
+            <h2>Alimentação</h2>
+            <article>
+                <div class="carousel">
+                    <div class="slides">
+                <img src="imagens/comida.jpeg" alt="">
+                <img src="imagens/comida2.jpeg" alt="">
+                    </div>
+                </div>
+            
+                <div>
+                    <h3>Ração Balanceada</h3>
+                    <p>Escolher uma ração de qualidade é fundamental para a saúde do seu cão. Rações premium são formuladas para atender às necessidades nutricionais específicas de cada fase da vida, seja filhote, adulto ou idoso. Além disso, considere fatores como raça, tamanho e nível de atividade. Consulte sempre um veterinário para determinar a melhor dieta para o seu amigo e, sempre que possível, introduza uma variedade de alimentos, como vegetais e carnes magras, como complemento.</p>
+                </div>
+            </article>
+            <article>
+                <div class="carousel">
+                    <div class="slides">
+                <img src="imagens/comidaproib.jpeg" alt="">
+                <img src="imagens/comidaproibida2.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Alimentos Proibidos</h3>
+                    <p>Alguns alimentos podem ser altamente tóxicos para os cães e devem ser evitados a todo custo. Itens como chocolate, cebola, alho, uvas, passas, abacate e adoçantes artificiais (como o xilitol) são perigosos e podem causar sérios problemas de saúde. Sempre verifique com um veterinário quais alimentos são seguros e quais devem ser evitados, e mantenha os produtos perigosos fora do alcance do seu animal.</p>
+                </div>
+            </article>
+        </div>
+
+        <div id="saude">
+            <h2>Saúde</h2>
+            <article>
+                <div class="carousel">
+                    <div class="slides">
+                        <img src="imagens/vacina.jpeg" alt="Banho">
+                        <img src="imagens/vacina02.jpeg" alt="Tosa">
+                    </div>
+                </div>
+  
+                <div>
+                    <h3>Vacinação</h3>
+                    <p>As vacinas são fundamentais para proteger seu cão contra doenças graves e contagiosas, como parvovirose, cinomose e hepatite infecciosa. Consulte o veterinário para criar um calendário de vacinação apropriado, que inclua vacinas anuais e reforços, de acordo com a idade e o histórico de saúde do seu pet. Não se esqueça também das vacinas para prevenir doenças transmitidas por carrapatos e pulgas, que podem causar sérios problemas de saúde.</p>
+                </div>
+            </article>
+            <article>
+                <div class="carousel">
+                    <div class="slides">
+                <img src="imagens/veterinairo.jpeg" alt="">
+                <img src="imagens/veterinario02.jpeg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h3>Visitas ao Veterinário</h3>
+                    <p>As visitas regulares ao veterinário são essenciais para garantir que seu cachorro permaneça saudável. Check-ups anuais permitem que o veterinário avalie a saúde geral do seu cão, identifique problemas precocemente e atualize as vacinas. Além disso, aproveite essas visitas para discutir quaisquer preocupações sobre o comportamento ou a alimentação do seu cão. Lembre-se: a saúde preventiva é a melhor maneira de garantir uma vida longa e feliz para seu melhor amigo.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blog de Cuidados com Cachorros. Todos os direitos reservados.</p>
+    </footer>
+        <!-- JavaScript -->
+        <script>
+            function initCarousels() {
+                const carousels = document.querySelectorAll('.carousel'); // Seleciona todos os carrosseis
+                carousels.forEach((carousel, i) => {
+                    let index = 0; // Índice para controlar o carrossel
+                    const slides = carousel.querySelector('.slides');
+                    const images = slides.querySelectorAll('img');
+                    const totalSlides = images.length;
+    
+                    function changeSlide() {
+                        index = (index + 1) % totalSlides; // Alterna entre os slides
+                        slides.style.transform = `translateX(${-index * 100}%)`;
+                    }
+    
+                    setInterval(changeSlide, 3000); // Muda a imagem a cada 3 segundos
+                });
+            }
+    
+            // Inicializa os carrosseis ao carregar a página
+            window.onload = initCarousels;
+        </script>
+</body>
+</html>

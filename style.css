@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 40px;
+    z-index: 1; /* O conteúdo do header ficará acima da imagem de fundo */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 250px;
+    background-image:linear-gradient(rgba(29, 29, 29, 0.43), rgba(29, 29, 29, 0.43)), url(imagens/header2.jpg);
+    background-size: cover; /* Faz a imagem cobrir toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    z-index: -1; /* A imagem de fundo ficará atrás do conteúdo */
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+div {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #236ba7b8;
+    font-size: 2em;
+    border-bottom: 2px solid #2027aed0;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+article {
+    display: flex;
+    align-items: flex-start;
+    text-align: end;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+article div {
+    flex: 1;
+    margin-left: 20px;
+    text-align: justify; /* Texto justificado */
+}
+
+article h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+article p {
+    text-align: justify;
+    width: 700px;
+}
+
+article img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carousel {
+    width: 100%;
+    max-width: 220px;
+    overflow: hidden;
+    margin: 25px auto;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 100%; /* O container precisa ser o dobro da largura para abrigar as duas imagens */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
