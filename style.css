@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,7 +21,7 @@ header {
     left: 0;
     width: 110%;
     height: 250px;
-    background-image:linear-gradient(rgba(29, 29, 29, 0.43), rgba(29, 29, 29, 0.43)), url(imagens/header2.jpg);
+    background-image: linear-gradient(rgba(29, 29, 29, 0.43), rgba(29, 29, 29, 0.43)), url(imagens/header2.jpg);
     background-size: cover; /* Faz a imagem cobrir toda a área da div */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -30,7 +31,6 @@ header {
 header h1 {
     font-size: 2.5em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    
 }
 
 nav ul {
@@ -106,6 +106,7 @@ article img {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .carousel {
     width: 100%;
     max-width: 220px;
@@ -127,8 +128,6 @@ article img {
     border-radius: 10px;
 }
 
-
-
 footer {
     background-color: #333;
     color: white;
@@ -142,4 +141,77 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9em;
+}
+
+/* Consultas de mídia para responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Reduz o tamanho da fonte no cabeçalho */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduz a margem entre os itens do menu */
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Reduz o tamanho da fonte dos links */
+    }
+
+    main {
+        padding: 10px; /* Reduz o padding no main */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte dos subtítulos */
+    }
+
+    article {
+        flex-direction: column; /* Coloca os elementos um em cima do outro */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    article div {
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-top: 10px; /* Adiciona uma margem superior */
+    }
+
+    article p {
+        width: auto; /* Remove a largura fixa */
+    }
+
+    article img {
+        width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+        max-width: 200px; /* Limita a largura máxima para a imagem */
+    }
+
+    .carousel {
+        max-width: 50%; /* Faz a carrossel ocupar 100% da largura */
+    }
+
+    .slides img {
+        width: 100%; /* Faz as imagens da carrossel ocuparem 100% da largura */
+        height: 200px; /* Mantém a proporção da imagem */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Reduz ainda mais o tamanho da fonte no cabeçalho */
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Ajusta a margem entre os itens do menu */
+    }
+
+    nav ul li a {
+        font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Reduz o tamanho da fonte dos subtítulos */
+    }
+
+    article img {
+        width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+    }
 }
